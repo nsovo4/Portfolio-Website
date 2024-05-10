@@ -2,3 +2,52 @@ html {
   height: 100%;
   width: 100%;
 }
+
+h1 {
+  text-align: center;
+  font-size: 400%;
+}
+
+.github {
+  background-color: #1E2B64;
+  color: #fff;
+  border: 12px;
+  font-size: 15px;
+  text-align: center;
+  margin: 40px 20px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+.twitter {
+  background-color: #1E2B64;
+  color: #fff;
+  border: 12px;
+  font-size: 15px;
+  text-align: center;
+  margin: 40px 20px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+.Linkedin {
+  background-color: #1E2B64;
+  color: #fff;
+  border: 12px;
+  font-size: 15px;
+  text-align: center;
+  margin: 40px 20px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+.Shop {
+  background-color: #1E2B64;
+  color: #fff;
+  border: 12px;
+  font-size: 15px;
+  text-align: center;
+  margin: 40px 20px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
