@@ -13,9 +13,10 @@ h1 {
   color: #fff;
   border: 12px;
   font-size: 15px;
+  border-radius: 10px;
   text-align: center;
   margin: 40px 20px;
-  padding: 15px 30px;
+  padding: 10px 30px;
   cursor: pointer;
 }
 
@@ -24,9 +25,10 @@ h1 {
   color: #fff;
   border: 12px;
   font-size: 15px;
+  border-radius: 10px;
   text-align: center;
   margin: 40px 20px;
-  padding: 15px 30px;
+  padding: 10px 30px;
   cursor: pointer;
 }
 
@@ -35,9 +37,10 @@ h1 {
   color: #fff;
   border: 12px;
   font-size: 15px;
+  border-radius: 10px;
   text-align: center;
   margin: 40px 20px;
-  padding: 15px 30px;
+  padding: 10px 30px;
   cursor: pointer;
 }
 
@@ -46,8 +49,9 @@ h1 {
   color: #fff;
   border: 12px;
   font-size: 15px;
+  border-radius: 10px;
   text-align: center;
   margin: 40px 20px;
-  padding: 15px 30px;
+  padding: 10px 30px;
   cursor: pointer;
 }
