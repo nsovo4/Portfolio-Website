@@ -19,14 +19,23 @@ h1 {
   object-fit: cover;
 }
 
-.container {
-  display: inline-flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90px;
-  height: 80px;
-  position: relative;
-  padding: 30px;
+.bottom-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.bottom-container a {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.bottom-container img {
+  flex: 1;
+  max-width: 100px;
+  height: 50px;
 }
 
 footer {
