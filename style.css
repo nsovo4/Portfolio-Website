@@ -12,28 +12,33 @@ h1 {
 .me {
   border-radius: 100%;
   border: 1px solid;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin-left: 50%;
   margin-right: 50%;
   object-fit: cover;
 }
 
 .bottom-container {
+  position: absolute;
+  width: 100%;
   flex: 1;
+  bottom: 65px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
 }
 
-.bottom-container a {
+.social-link {
+  display: inline-block;
+  position: relative;
   flex: 1;
-  margin: 0 10px;
+  margin: 0 120px;
+  line-height: 0;
+  vertical-align: top;
 }
 
 .bottom-container img {
-  flex: 1;
   max-width: 100px;
   height: 50px;
 }
