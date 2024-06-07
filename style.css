@@ -1,7 +1,30 @@
+  @media (max-width: 768px) {
+  /* Styles for screens smaller than 768px */
+  h1 {
+    font-size: 300%; /* Reduce font size */
+  }
+
+  .me {
+    width: 100px; /* Reduce image size */
+    height: 100px;
+  }
+
+  .bottom-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .social-link {
+    margin: 15px; /* Adjust margin for vertical layout */
+  }
+}
+
+
 html {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 h1 {
