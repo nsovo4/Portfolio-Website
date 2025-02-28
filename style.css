@@ -1,4 +1,6 @@
-  @media (max-width: 768px) {
+
+
+@media (max-width: 768px) {
   /* Styles for screens smaller than 768px */
   h1 {
     font-size: 300%; /* Reduce font size */
@@ -8,17 +10,7 @@
     width: 100px; /* Reduce image size */
     height: 100px;
   }
-
-  .bottom-container {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-  }
-
-  .social-link {
-    margin: 15px; /* Adjust margin for vertical layout */
-  }
 }
-
 
 html {
   height: 100%;
@@ -45,21 +37,21 @@ h1 {
 
 .bottom-container {
   position: absolute;
-  width: 100%;
-  flex: 1;
+  width: 80%; /* Reduce width to prevent touching edges */
+  left: 50%; /* Center the container */
+  transform: translateX(-50%); /* Center the container */
   bottom: 100px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Evenly space links */
   align-items: center;
+  z-index: 1;
 }
 
 .social-link {
   display: inline-block;
   position: relative;
-  flex: 1;
-  margin: 0 120px;
   line-height: 0;
-  vertical-align: top;
+ /* vertical-align: top;  */
 }
 
 .bottom-container img {
@@ -70,10 +62,163 @@ h1 {
 footer {
   background-color: #1E2B64;
   color: #fff;
-  padding: 5px 20px;
+  padding: 0 20px;
   text-align: center;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
+}
+
+/* Add these new styles */
+.profile-container {
+  perspective: 1000px;
+  width: fit-content; /* Contain to exact size of image */
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+
+.profile-card {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer; /* Move cursor pointer to the card instead of container */
+}
+
+.profile-container.flipped .profile-card {
+  transform: rotateY(180deg);
+}
+
+.profile-front {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  backface-visibility: hidden;
+}
+
+.profile-front img.me {
+  width: 150px;  
+  height: 150px; 
+  border-radius: 100%; 
+  border: 1px solid; 
+  object-fit: cover;
+}
+
+.profile-back {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  background: rgba(255, 255, 255, 0.9);
+  transform: rotateY(180deg);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  left: -75px;
+  backface-visibility: hidden;
+}
+
+.bio {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+}
+
+/* Overlay styles */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 2;  /* Set overlay between profile and other elements */
+}
+
+body.overlay-active::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Add these new styles */
+.skills-belt-container {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #1E2B64, #2a3b8f);
+  margin: 100px 0;
+  z-index: 1;  /* Changed to 1 so it gets blurred */
+}
+
+.skills-belt {
+  display: flex;
+  width: fit-content;
+  animation: scroll 20s linear infinite;
+}
+
+.skills {
+  display: flex;
+  gap: 50px;
+  padding: 0 15px;
+}
+
+.skills span {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 12px 20px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.skills span:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Add a gradient overlay to create smooth edges */
+.skills-belt-container::before,
+.skills-belt-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+}
+
+.skills-belt-container::before {
+  left: 0;
+  background: linear-gradient(90deg, #1E2B64 0%, transparent 100%);
+}
+
+.skills-belt-container::after {
+  right: 0;
+  background: linear-gradient(90deg, transparent 0%, #1E2B64 100%);
 }
