@@ -59,17 +59,6 @@ h1 {
   height: 50px;
 }
 
-footer {
-  background-color: #1E2B64;
-  color: #fff;
-  padding: 0 20px;
-  text-align: center;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-
 /* Add these new styles */
 .profile-container {
   perspective: 1000px;
