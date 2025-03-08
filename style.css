@@ -262,6 +262,7 @@ body.overlay-active::before {
 .projects-btn {
   background: #1E2B64;
   color: white;
+  text-decoration: none;
   border: none;
   padding: 12px 25px;
   font-size: 18px;
