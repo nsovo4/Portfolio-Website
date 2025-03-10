@@ -1,0 +1,98 @@
+/* Theme toggle button */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 5;
+}
+
+.theme-btn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode styles */
+[data-theme="dark"] {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+[data-theme="dark"] h1 {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .profile-back {
+  background: rgba(40, 40, 40, 0.95);
+}
+
+[data-theme="dark"] .bio {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .skills-belt-container {
+  background: linear-gradient(90deg, #121212, #1E2B64);
+}
+
+[data-theme="dark"] .skills-belt-container::before {
+  background: linear-gradient(90deg, #121212 0%, transparent 100%);
+}
+
+[data-theme="dark"] .skills-belt-container::after {
+  background: linear-gradient(90deg, transparent 0%, #121212 100%);
+}
+
+[data-theme="dark"] .projects-btn {
+  background: #2a3b8f;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .projects-btn:hover {
+  background: #3a4b9f;
+}
+
+[data-theme="dark"] body::before {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Dark mode for projects page */
+[data-theme="dark"] .project-card {
+  background: #2d2d2d;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .project-content h2 {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .project-description {
+  color: #cccccc;
+}
+
+[data-theme="dark"] .tech-stack span {
+  background: rgba(46, 46, 46, 0.8);
+  color: #ffffff;
+}
+
+[data-theme="dark"] .back-btn {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .light-icon {
+  display: none;
+}
+
+[data-theme="light"] .dark-icon {
+  display: none;
+}

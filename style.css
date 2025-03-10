@@ -1,15 +1,13 @@
 @media (max-width: 768px) {
-  /* Styles for screens smaller than 768px */
   h1 {
-    font-size: 300%; /* Reduce font size */
+    font-size: 300%; 
   }
 
   .me {
-    width: 100px; /* Reduce image size */
+    width: 100px; 
     height: 100px;
   }
 
-  /* Add profile card responsive sizes */
   .profile-card {
     width: 100px;
     height: 100px;
@@ -28,14 +26,14 @@
 
 @media (max-width: 480px) {
   .profile-back {
-    width: 240px; /* Further reduce width */
-    left: -45px; /* Adjust position */
-    padding: 12px; /* Further reduce padding */
+    width: 240px;
+    left: -45px; 
+    padding: 12px; 
   }
 
   .bio {
-    font-size: 12px; /* Further reduce font size */
-    line-height: 1.3; /* Further reduce line height */
+    font-size: 12px; 
+    line-height: 1.3;
   }
 }
 
@@ -64,12 +62,12 @@ h1 {
 
 .bottom-container {
   position: absolute;
-  width: 80%; /* Reduce width to prevent touching edges */
-  left: 50%; /* Center the container */
-  transform: translateX(-50%); /* Center the container */
-  bottom: 100px;
+  width: 80%; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  bottom: 45px;
   display: flex;
-  justify-content: space-between; /* Evenly space links */
+  justify-content: space-between; 
   align-items: center;
   z-index: 1;
 }
@@ -78,7 +76,6 @@ h1 {
   display: inline-block;
   position: relative;
   line-height: 0;
- /* vertical-align: top;  */
 }
 
 .bottom-container img {
@@ -86,10 +83,10 @@ h1 {
   height: 50px;
 }
 
-/* Add these new styles */
+
 .profile-container {
   perspective: 1000px;
-  width: fit-content; /* Contain to exact size of image */
+  width: fit-content; 
   margin: 0 auto;
   position: relative;
   z-index: 3;
@@ -102,7 +99,7 @@ h1 {
   margin: 0 auto;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  cursor: pointer; /* Move cursor pointer to the card instead of container */
+  cursor: pointer; 
 }
 
 .profile-container.flipped .profile-card {
@@ -147,7 +144,6 @@ h1 {
   margin: 0;
 }
 
-/* Overlay styles */
 body::before {
   content: '';
   position: fixed;
@@ -160,7 +156,7 @@ body::before {
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
-  z-index: 2;  /* Set overlay between profile and other elements */
+  z-index: 2; 
 }
 
 body.overlay-active::before {
@@ -168,7 +164,6 @@ body.overlay-active::before {
   visibility: visible;
 }
 
-/* Add these new styles */
 .skills-belt-container {
   position: relative;
   width: 100%;
@@ -176,7 +171,7 @@ body.overlay-active::before {
   overflow: hidden;
   background: linear-gradient(90deg, #1E2B64, #2a3b8f);
   margin: 100px 0;
-  z-index: 1;  /* Changed to 1 so it gets blurred */
+  z-index: 1; 
 }
 
 .skills-belt {
@@ -218,7 +213,6 @@ body.overlay-active::before {
   }
 }
 
-/* Add a gradient overlay to create smooth edges */
 .skills-belt-container::before,
 .skills-belt-container::after {
   content: '';
@@ -239,23 +233,22 @@ body.overlay-active::before {
   background: linear-gradient(90deg, transparent 0%, #1E2B64 100%);
 }
 
-/* Add media queries for smaller screens */
 @media (max-width: 768px) {
   .profile-back {
-    width: 280px; /* Reduce width */
-    left: -65px; /* Adjust position */
-    padding: 15px; /* Reduce padding */
+    width: 280px; 
+    left: -65px; 
+    padding: 15px; 
   }
 
   .bio {
-    font-size: 14px; /* Reduce font size */
-    line-height: 1.4; /* Reduce line height */
+    font-size: 14px; 
+    line-height: 1.4; 
   }
 }
 
 .projects-button-container {
   text-align: center;
-  margin: 30px auto;
+  margin: 45px auto;
   z-index: 1;
 }
 
