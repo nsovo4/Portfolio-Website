@@ -1,4 +1,8 @@
 
+html {
+  scroll-behavior: smooth;
+}
+
 .nav-container {
     padding: 30px;
     margin-bottom: 20px;
@@ -107,3 +111,5 @@
       max-width: 100%;
     }
   }
+
+  
