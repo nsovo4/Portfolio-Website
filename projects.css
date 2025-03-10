@@ -1,13 +1,18 @@
 
 .nav-container {
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 250%;
   }
 
   .back-btn {
     color: #1E2B64;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 21px;
     transition: all 0.3s ease;
   }
 
