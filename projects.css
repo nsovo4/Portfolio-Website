@@ -112,4 +112,26 @@ html {
     }
   }
 
+  .cv {
+    display: flex;
+    justify-content: center;
+  }
+
+  .download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
   
