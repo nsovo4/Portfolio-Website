@@ -77,6 +77,11 @@ h1 {
   display: inline-block;
   position: relative;
   line-height: 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-link:hover{
+  transform: scale(1.2);
 }
 
 .bottom-container img {
