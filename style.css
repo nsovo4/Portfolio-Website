@@ -43,7 +43,7 @@
 @media (max-width: 480px) {
   .profile-back {
     width: 240px;
-    left: -45px; 
+    left: -50px; 
     padding: 12px; 
   }
 
@@ -80,13 +80,13 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   object-fit: cover;
-  cursor: pointer; /* Add pointer cursor */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+  cursor: pointer; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .me:hover {
-  transform: scale(1.05); /* Slightly enlarge the image on hover */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  transform: scale(1.05); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .bottom-container {
