@@ -13,9 +13,18 @@ document.addEventListener('DOMContentLoaded', () => {
 // Profile flip functionality (only on home page)
 const profileContainer = document.querySelector('.profile-container');
 if (profileContainer) {
-  profileContainer.addEventListener('click', function() {
+  profileContainer.addEventListener('click', function(event) {
     this.classList.toggle('flipped');
     document.body.classList.toggle('overlay-active');
+    event.stopPropagation(); // Prevent the event from bubbling up to the document
+  });
+
+  // Hide profile card when clicking outside of it
+  document.addEventListener('click', function(event) {
+    if (!profileContainer.contains(event.target)) {
+      profileContainer.classList.remove('flipped');
+      document.body.classList.remove('overlay-active');
+    }
   });
 }
 
@@ -37,4 +46,4 @@ prefersDarkScheme.addEventListener('change', (e) => {
   const newTheme = e.matches ? 'dark' : 'light';
   document.documentElement.setAttribute('data-theme', newTheme);
   localStorage.setItem('theme', newTheme);
-}); 
+});
