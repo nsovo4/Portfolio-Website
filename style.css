@@ -24,17 +24,14 @@
   }
 
   .profile-back {
-    width: 240px;
-    left: -60px;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    width: 280px; 
+    left: -65px; 
+    padding: 15px; 
   }
 
   .bio {
-    font-size: 14px;
+    font-size: 14px; 
+    line-height: 1.4; 
   }
 
   .bottom-container img {
@@ -45,17 +42,14 @@
 
 @media (max-width: 480px) {
   .profile-back {
-    width: 200px;
-    left: -50px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    width: 240px;
+    left: -50px; 
+    padding: 12px; 
   }
 
   .bio {
-    font-size: 12px;
+    font-size: 12px; 
+    line-height: 1.3;
   }
 
   .bottom-container img {
