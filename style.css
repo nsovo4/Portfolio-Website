@@ -227,9 +227,8 @@ body.overlay-active::before {
   overflow: hidden;
   width: 100vw;
   background: #1E2B64;
-  border-radius: 10px;
   box-shadow: 0 4px 15px rgba(30, 43, 100, 0.2);
-  margin-top: 100px;
+  margin-top: 110px;
 }
 
 .skills-belt {
