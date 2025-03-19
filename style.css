@@ -1,10 +1,10 @@
 @media (max-width: 768px) {
   h1 {
-    font-size: 300%; 
+    font-size: 300%;
   }
 
   .me {
-    width: 100px; 
+    width: 100px;
     height: 100px;
   }
 
@@ -90,23 +90,23 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   object-fit: cover;
-  cursor: pointer; 
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .me:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .bottom-container {
   position: absolute;
-  width: 80%; 
-  left: 50%; 
-  transform: translateX(-50%); 
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 45px;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   z-index: 1;
 }
@@ -118,7 +118,7 @@ h1 {
   transition: transform 0.2s ease-in-out;
 }
 
-.social-link:hover{
+.social-link:hover {
   transform: scale(1.2);
 }
 
@@ -129,7 +129,7 @@ h1 {
 
 .profile-container {
   perspective: 1000px;
-  width: fit-content; 
+  width: fit-content;
   margin: 0 auto;
   position: relative;
   z-index: 3;
@@ -142,7 +142,7 @@ h1 {
   margin: 0 auto;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .profile-container.flipped .profile-card {
@@ -157,10 +157,10 @@ h1 {
 }
 
 .profile-front img.me {
-  width: 150px;  
-  height: 150px; 
-  border-radius: 100%; 
-  border: 1px solid; 
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 1px solid;
   object-fit: cover;
 }
 
@@ -199,7 +199,7 @@ body::before {
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
-  z-index: 2; 
+  z-index: 2;
 }
 
 body.overlay-active::before {
@@ -255,17 +255,29 @@ body.overlay-active::before {
   align-items: center;
 }
 
-.skills img {
-  width: 60px;
-  height: 40px;
-  margin: 0 15px;
-}
-
 .skills span {
   display: inline-block;
   padding: 5px;
   border-radius: 5px;
   transition: all 0.3s ease;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.skill-item img {
+  width: 60px;
+  height: 40px;
+  margin-right: 2px;
+}
+
+.skill-item span {
+  color: #dfdfdf;
+  font-size: 16px;
+  text-align: center;
 }
 
 .skills span:hover {
@@ -276,6 +288,7 @@ body.overlay-active::before {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
