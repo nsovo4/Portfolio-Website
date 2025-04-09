@@ -1,3 +1,28 @@
+:root {
+  --background-color-light: #ffffff;
+  --background-color-dark: #000000;
+  --text-color-light: #000000;
+  --text-color-dark: #ffffff;
+  --button-bg-light: #007bff;
+  --button-bg-dark: #007bff;
+  --label-color-light: #000000;
+  --label-color-dark: #ffffff;
+}
+
+[data-theme="light"] {
+  --background-color: var(--background-color-light);
+  --text-color: var(--text-color-light);
+  --button-bg: var(--button-bg-light);
+  --label-color: var(--label-color-light);
+}
+
+[data-theme="dark"] {
+  --background-color: var(--background-color-dark);
+  --text-color: var(--text-color-dark);
+  --button-bg: var(--button-bg-dark);
+  --label-color: var(--label-color-dark);
+}
+
 html {
   height: 100%;
   width: 100%;
@@ -163,7 +188,7 @@ h1 {
 .modal {
   display: none;
   position: fixed;
-  z-index: 5;
+  z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
@@ -173,28 +198,57 @@ h1 {
 }
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: var(--background-color);
+  color: var(--text-color);
   margin: 10% auto;
   padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  max-width: 500px;
   border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+.modal-content label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--label-color);
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.modal-content button {
+  background-color: var(--button-bg);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: var(--button-bg-dark);
+}
+
 .close-btn {
-  color: #aaa;
+  color: var(--text-color);
   float: right;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
 }
 
-.close-btn:hover,
-.close-btn:focus {
-  color: black;
-  text-decoration: none;
+.close-btn:hover {
+  color: #007bff;
 }
 
 #hireMeForm {
@@ -205,14 +259,14 @@ h1 {
 
 #hireMeForm label {
   font-weight: bold;
-  color: #333;
+  color: var(--label-color);
 }
 
 #hireMeForm input,
 #hireMeForm textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
   box-sizing: border-box;
