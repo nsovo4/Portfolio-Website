@@ -111,6 +111,17 @@
       </p>
     </footer>
 
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("InmKXs_hsuA7qc5-Y"); // Replace with your actual public key
+      })();
+    </script>
+
     <script>
       const hireMeBtn = document.getElementById("hireMeBtn");
       const hireMeModal = document.getElementById("hireMeModal");
@@ -135,16 +146,32 @@
       hireMeForm.addEventListener("submit", (event) => {
         event.preventDefault();
         console.log("Form submitted");
-        emailjs.sendForm("service_gtq6z7k", "template_rwx62tg", hireMeForm)
-          .then(() => {
-            alert("Message sent successfully!");
-            hireMeModal.style.display = "none";
-            hireMeForm.reset();
-          }, (error) => {
-            alert("Failed to send message. Please try again later.");
-            console.error("EmailJS error:", error);
-          });
+        emailjs
+          .sendForm("service_gtq6z7k", "template_rwx62tg", hireMeForm)
+          .then(
+            () => {
+              Swal.fire({
+                title: "Message Sent!",
+                text: "I'll be in touch soon!",
+                icon: "success",
+              });
+              hireMeModal.style.display = "none";
+              hireMeForm.reset();
+            },
+            (error) => {
+              Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Failed to send your message. Please try again later!",
+                confirmButtonColor: "#d33",
+              });
+              console.error("EmailJS error:", error);
+            }
+          );
       });
     </script>
+
+    <!-- SweetAlert2 CSS + JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
