@@ -2,8 +2,6 @@
 html {
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
   scroll-behavior: smooth;
 }
 
@@ -145,7 +143,6 @@ html {
   background-color: #1E2B64;
   color: white;
   font-weight: bold;
-  position: fixed;
   bottom: 0;
   width: 100%;
 }
