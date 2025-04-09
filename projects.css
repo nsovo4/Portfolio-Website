@@ -1,4 +1,3 @@
-
 html {
   height: 100%;
   width: 100%;
@@ -6,141 +5,138 @@ html {
 }
 
 .nav-container {
-    padding: 30px;
-    margin-bottom: 20px;
-  }
+  padding: 30px;
+  margin-bottom: 20px;
+}
 
-  h1 {
-    text-align: center;
-    font-size: 250%;
-  }
+h1 {
+  text-align: center;
+  font-size: 250%;
+}
 
-  .back-btn {
-    color: #1E2B64;
-    text-decoration: none;
-    font-size: 21px;
-    transition: all 0.3s ease;
-  }
+.back-btn {
+  color: #1e2b64;
+  text-decoration: none;
+  font-size: 21px;
+  transition: all 0.3s ease;
+}
 
-  .back-btn:hover {
-    color: #2a3b8f;
-  }
+.back-btn:hover {
+  color: #2a3b8f;
+}
 
+.projects-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.project-content h2 {
+  color: #1e2b64;
+  margin: 0 0 15px 0;
+  font-size: 1.8em;
+}
+
+.project-description {
+  color: #494949;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: 1.2em;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tech-stack span {
+  background: rgba(30, 43, 100, 0.1);
+  color: #1e2b64;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+}
+
+.project-btn {
+  background: #1e2b64;
+  color: white;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+  background: #2a3b8f;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
   .projects-grid {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: 1fr;
+    padding: 15px;
   }
 
   .project-card {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    max-width: 100%;
   }
-
-  .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  }
-
-  .project-card:hover .project-image img {
-    transform: scale(1.05);
-  }
-
-  .project-content {
-    padding: 20px;
-  }
-
-  .project-content h2 {
-    color: #1E2B64;
-    margin: 0 0 15px 0;
-    font-size: 1.8em;
-  }
-
-  .project-description {
-    color: #494949;
-    margin-bottom: 20px;
-    line-height: 1.5;
-    font-size: 1.2em;
-  }
-
-  .tech-stack {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-
-  .tech-stack span {
-    background: rgba(30, 43, 100, 0.1);
-    color: #1E2B64;
-    padding: 5px 12px;
-    border-radius: 15px;
-    font-size: 14px;
-  }
-
-  .project-links {
-    display: flex;
-    gap: 15px;
-  }
-
-  .project-btn {
-    background: #1E2B64;
-    color: white;
-    text-decoration: none;
-    padding: 8px 20px;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-  }
-
-  .project-btn:hover {
-    background: #2a3b8f;
-    transform: translateY(-2px);
-  }
-
-  @media (max-width: 768px) {
-    .projects-grid {
-      grid-template-columns: 1fr;
-      padding: 15px;
-    }
-
-    .project-card {
-      max-width: 100%;
-    }
-  }
-
-  .cv {
-    display: flex;
-    justify-content: center;
-  }
-
-  .download-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    background-color: #007BFF;
-    border: none;
-    margin-bottom: 80px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: 0.3s ease;
 }
 
-.download-btn:hover {
-    background-color: #0056b3;
+.download-btn,
+.hire-me-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  margin-bottom: 80px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.download-btn:hover,
+.hire-me-btn:hover {
+  background-color: #0056b3;
 }
 
 .footer {
   text-align: center;
   padding: 2px 0;
-  background-color: #1E2B64;
+  background-color: #1e2b64;
   color: white;
   font-weight: bold;
   bottom: 0;
@@ -148,7 +144,7 @@ html {
 }
 
 .footer a {
-  color: #FFD700;
+  color: #ffd700;
   text-decoration: none;
   padding: 10px;
 }
@@ -157,4 +153,87 @@ html {
   text-decoration: underline;
 }
 
-  
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+}
+
+#hireMeForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#hireMeForm label {
+  font-weight: bold;
+  color: #333;
+}
+
+#hireMeForm input,
+#hireMeForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+#hireMeForm textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit-btn {
+  background: #1E2B64;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #2a3b8f;
+}
