@@ -8,22 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.documentElement.setAttribute('data-theme', currentTheme);
 });
 
-const profileContainer = document.querySelector('.profile-container');
-if (profileContainer) {
-  profileContainer.addEventListener('click', function(event) {
-    this.classList.toggle('flipped');
-    document.body.classList.toggle('overlay-active');
-    event.stopPropagation();
-  });
-
-  document.addEventListener('click', function(event) {
-    if (!profileContainer.contains(event.target)) {
-      profileContainer.classList.remove('flipped');
-      document.body.classList.remove('overlay-active');
-    }
-  });
-}
-
 const themeToggle = document.getElementById('themeToggle');
 if (themeToggle) {
   themeToggle.addEventListener('click', () => {

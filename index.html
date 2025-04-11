@@ -15,30 +15,17 @@
 <h1> Nsovo Develops </h1>
 
   <div class="profile-container">
-    <div class="profile-card">
-      <div class="profile-front">
-        <img class="me" src="me.jpg" alt="Profile Picture">
-      </div>
-      <div class="profile-back">
-        <p class="bio">
-          My name is Nsovo Mboweni, a Software Development graduate at Rosebank College, 
-          completed my diploma in 2024. My passion is in building innovative, 
-          user-friendly web and mobile applications. 
-          I have hands-on experience in both front-end and back-end development, 
-          working with languages like Java, JavaScript, HTML, CSS, SQL, PHP, and C#, and
-          technologies such as .NET, React, Firebase, and Azure.
-          <br><br>
-          I have successfully developed projects ranging from mobile apps, 
-          like my bird-watching app "FeatherTrail," to web-based systems and desktop applications. 
-          My goal is to grow as a full-stack developer and contribute to impactful projects 
-          while continuously learning new technologies.
-        </p>
-      </div>
+    <div class="profile-picture">
+      <img class="me" src="me.jpg" alt="Profile Picture">
     </div>
-  </div>
-
-  <div class="projects-button-container">
-    <a href="projects.html" class="projects-btn">My Projects</a>
+    <div class="profile-info">
+      <h2>Nsovo Mboweni</h2>
+      <p class="bio">
+        I am a passionate developer with experience in building modern web applications. 
+        I specialize in JavaScript, React, and backend development. Let's create something amazing together!
+      </p>
+      <a href="mailto:mnsovo2@gmail.com" class="contact-btn">Contact Me</a>
+    </div>
   </div>
 
   <div class="skills-belt-container">
@@ -163,6 +150,152 @@
     </div>
    </div>
   </div>
+
+  <!-- projects.html -->
+
+  <h1 class="projects">Projects</h1>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-content">
+          <h2>E-commerce Website</h2>
+          <p class="project-description">
+            An e-commerce website for a skincare brand specializing in natural
+            Wild Yam cream. Features include product showcase, benefits section,
+            and a shopping cart system.
+          </p>
+          <div class="tech-stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>APIs</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://nsovo4.github.io/Burgundy-Supplies/"
+              target="_blank"
+              class="project-btn"
+              >Check it out</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-content">
+          <h2>Portfolio Website</h2>
+          <p class="project-description">
+            A professional photography portfolio website showcasing the
+            photographer's work across different categories including Film and
+            Photography. Features a clean, minimalist design that puts the focus
+            on the visual content.
+          </p>
+          <div class="tech-stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://nsovo4.github.io/Mvjor---Portfolio/"
+              target="_blank"
+              class="project-btn"
+              >Check it out</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <br/><br><br><br>
+
+    <div class="action-buttons">
+      <a
+        class="download-btn"
+        href="Nsovo Mboweni - CV.pdf"
+        download="CV - Nsovo Mboweni"
+        >Download CV</a
+      >
+      <button class="hire-me-btn" id="hireMeBtn">Hire Me</button>
+    </div>
+
+    <div id="hireMeModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Hire Me</h2>
+        <form id="hireMeForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit" class="submit-btn">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js">
+    </script>
+
+    <script>
+      (function () {
+        emailjs.init("InmKXs_hsuA7qc5-Y"); 
+      })();
+
+      const hireMeBtn = document.getElementById("hireMeBtn");
+      const hireMeModal = document.getElementById("hireMeModal");
+      const closeBtn = document.querySelector(".close-btn");
+
+      hireMeBtn.addEventListener("click", () => {
+        hireMeModal.style.display = "block";
+      });
+
+      closeBtn.addEventListener("click", () => {
+        hireMeModal.style.display = "none";
+      });
+
+      window.addEventListener("click", (event) => {
+        if (event.target === hireMeModal) {
+          hireMeModal.style.display = "none";
+        }
+      });
+
+      const hireMeForm = document.getElementById("hireMeForm");
+      hireMeForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        console.log("Form submitted");
+        emailjs
+          .sendForm("service_gtq6z7k", "template_rwx62tg", hireMeForm)
+          .then(
+            () => {
+              Swal.fire({
+                title: "Message Sent!",
+                text: "I'll be in touch soon!",
+                icon: "success",
+              });
+              hireMeModal.style.display = "none";
+              hireMeForm.reset();
+            },
+            (error) => {
+              Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Failed to send your message. Please try again later!",
+                confirmButtonColor: "#d33",
+              });
+              console.error("EmailJS error:", error);
+            }
+          );
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- projects.html -->
 
   <div class="bottom-container">
    <a class="social-link" href="https://github.com/nsovo4" target="_blank">
