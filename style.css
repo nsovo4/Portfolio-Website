@@ -144,6 +144,7 @@ h1 {
 .projects {
   margin: 0 auto;
   padding: 80px;
+  margin-top: 100px;
 }
 
 .me {
@@ -394,6 +395,7 @@ h1 {
 .projects-grid {
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 10px;
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -477,7 +479,7 @@ h1 {
   color: white;
   background-color: #007bff;
   border: none;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   border-radius: 5px;
   text-decoration: none;
   transition: 0.3s ease;
