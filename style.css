@@ -45,11 +45,6 @@
     height: 100px;
   }
 
-  .profile-front {
-    width: 100px;
-    height: 100px;
-  }
-
   .projects-btn {
     font-size: 16px;
     padding: 10px 20px;
@@ -68,11 +63,6 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-  }
-
-  .profile-picture img {
-    width: 150px;
-    height: 150px;
   }
 
   .profile-info {
@@ -113,11 +103,6 @@
   .bottom-container img {
     max-width: 80px;
     height: 33px;
-  }
-
-  .profile-picture img {
-    width: 120px;
-    height: 120px;
   }
 
   .profile-info h2 {
@@ -199,19 +184,6 @@ h1 {
   gap: 100px;
   margin: 80px auto;
   max-width: 1200px;
-}
-
-.profile-picture {
-  flex-shrink: 0;
-}
-
-.profile-picture img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #1E2B64;
-  box-shadow: 0 4px 15px rgba(30, 43, 100, 0.2);
 }
 
 .profile-info {
