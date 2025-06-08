@@ -442,8 +442,7 @@ h1 {
   transform: translateY(-2px);
 }
 
-.download-btn,
-.hire-me-btn {
+.download-btn {
   display: inline-block;
   padding: 10px 20px;
   font-size: 16px;
@@ -457,114 +456,6 @@ h1 {
   transition: 0.3s ease;
 }
 
-.download-btn:hover,
-.hire-me-btn:hover {
+.download-btn:hover {
   background-color: #0056b3;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  margin: 10% auto;
-  padding: 20px;
-  border-radius: 10px;
-  width: 80%;
-  max-width: 400px;
-  box-shadow: var(--box-shadow);
-}
-
-.modal-content label {
-  display: block;
-  margin-bottom: 5px;
-  color: var(--label-color);
-}
-
-.modal-content input,
-.modal-content textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
-.modal-content button {
-  background-color: var(--button-bg);
-  color: var(--text-color);
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.modal-content button:hover {
-  background-color: var(--button-bg-dark);
-}
-
-.close-btn {
-  color: var(--text-color);
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.close-btn:hover {
-  color: #007bff;
-}
-
-#hireMeForm {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-#hireMeForm label {
-  font-weight: bold;
-  color: var(--label-color);
-}
-
-#hireMeForm input,
-#hireMeForm textarea {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  box-sizing: border-box;
-}
-
-#hireMeForm textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-
-.submit-btn {
-  background: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.submit-btn:hover {
-  background: #2a3b8f;
 }
