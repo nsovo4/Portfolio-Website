@@ -40,11 +40,6 @@
     font-size: 300%;
   }
 
-  .me {
-    width: 100px;
-    height: 100px;
-  }
-
   .projects-btn {
     font-size: 16px;
     padding: 10px 20px;
@@ -132,24 +127,6 @@ h1 {
   margin-top: 100px;
 }
 
-.me {
-  display: block;
-  border-radius: 100%;
-  border: 1px solid;
-  width: 150px;
-  height: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  object-fit: cover;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.me:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
 .bottom-container {
   position: relative;
   width: 80%;
@@ -182,12 +159,13 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 100px;
-  margin: 80px auto;
+  margin: 10px auto;
   max-width: 1200px;
 }
 
 .profile-info {
   max-width: 500px;
+  padding: 50px;
 }
 
 .profile-info h2 {
