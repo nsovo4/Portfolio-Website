@@ -191,6 +191,22 @@ h1 {
   animation: typing 2.5s steps(16, end), blink-caret 0.75s step-end infinite;
 }
 
+.typing-animation-mobile {
+  display: none;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #333;
+  font-family: inherit;
+  font-size: inherit;
+  animation: typing 1.2s steps(7, end), blink-caret 0.75s step-end infinite;
+  width: 7ch;
+}
+
+@media (max-width: 600px) {
+  .typing-animation { display: none; }
+  .typing-animation-mobile { display: inline-block; }
+}
+
 @keyframes typing {
   from { width: 0 }
   to { width: 14ch }
