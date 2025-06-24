@@ -188,7 +188,7 @@ h1 {
   border-right: 3px solid #333;
   font-family: inherit;
   font-size: inherit;
-  animation: typing 2.5s steps(16, end), blink-caret 0.75s step-end infinite;
+  animation: typing-desktop 2.5s steps(16, end), blink-caret 0.75s step-end infinite;
 }
 
 .typing-animation-mobile {
@@ -198,7 +198,7 @@ h1 {
   border-right: 3px solid #333;
   font-family: inherit;
   font-size: inherit;
-  animation: typing 1.2s steps(7, end), blink-caret 0.75s step-end infinite;
+  animation: typing-mobile 2.7s steps(7, end), blink-caret 0.75s step-end infinite;
   width: 7ch;
 }
 
@@ -207,9 +207,14 @@ h1 {
   .typing-animation-mobile { display: inline-block; }
 }
 
-@keyframes typing {
+@keyframes typing-desktop {
   from { width: 0 }
   to { width: 14ch }
+}
+
+@keyframes typing-mobile {
+  from { width: 0 }
+  to { width: 7ch }
 }
 
 @keyframes blink-caret {
