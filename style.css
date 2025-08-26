@@ -116,6 +116,21 @@ html, body {
   scroll-behavior: smooth;
 }
 
+#Projects-btn {
+  position: absolute;
+  left: 50px;      
+  top: 50px;       
+  right: auto;     
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
 h1 {
   text-align: center;
   font-size: 400%;
