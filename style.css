@@ -397,6 +397,119 @@ h1 {
   background: #2a3b8f;
 }
 
+.download-btn-cert {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: #007bff;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.download-btn:hover {
+  background: #0056b3;
+}
+
+
+/* Education css */
+
+.education {
+  margin: 0 auto;
+  padding: 80px;
+  margin-top: 50px;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.education-card {
+  background: var(--background-color);
+  color: var(--text-color);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.education-content h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+.education-content h4 {
+  font-size: 16px;
+  color: var(--label-color);
+  margin-bottom: 5px;
+}
+
+.duration {
+  font-size: 14px;
+  color: var(--label-color);
+}
+
+/* Certificates css */
+
+.certificates {
+  margin: 0 auto;
+  padding: 80px;
+  margin-top: 50px;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.certificate-card {
+  background: var(--background-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.certificate-content h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+.certificate-content h4 {
+  font-size: 16px;
+  color: var(--label-color);
+  margin-bottom: 5px;
+}
+
+.duration {
+  font-size: 14px;
+  color: var(--label-color);
+}
+
+
+
 /* prjects css */
 
 .projects-grid {
