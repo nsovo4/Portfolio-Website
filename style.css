@@ -394,7 +394,7 @@ h1 {
   background: #2a3b8f;
 }
 
-.download-btn-cert {
+.view-btn-cert {
   display: inline-block;
   margin-top: 12px;
   padding: 8px 16px;
@@ -416,16 +416,17 @@ h1 {
 .education {
   margin: 0 auto;
   padding: 80px;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .education-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
   max-width: 1200px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
 }
 
 .education-card {
@@ -433,13 +434,13 @@ h1 {
   color: var(--text-color);
   border-radius: 15px;
   padding: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .education-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 .education-content h2 {
@@ -464,16 +465,17 @@ h1 {
 .certificates {
   margin: 0 auto;
   padding: 80px;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .certificates-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
   max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 20px;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin: 40px auto;
+  gap: 50px;
 }
 
 .certificate-card {
@@ -481,13 +483,13 @@ h1 {
   color: var(--text-color);
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .certificate-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 .certificate-content h2 {
