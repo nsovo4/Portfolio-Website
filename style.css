@@ -134,7 +134,9 @@ h1 {
   font-size: 400%;
 }
 
-.projects {
+.projects,
+.education,
+.certificates {
   margin: 0 auto;
   padding: 80px;
   margin-top: 100px;
@@ -413,12 +415,6 @@ h1 {
 
 /* Education css */
 
-.education {
-  margin: 0 auto;
-  padding: 80px;
-  margin-top: 100px;
-}
-
 .education-grid {
   max-width: 1200px;
   margin: 0 auto;
@@ -433,6 +429,7 @@ h1 {
   background: var(--background-color);
   color: var(--text-color);
   border-radius: 15px;
+  overflow: hidden;
   padding: 20px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -462,12 +459,6 @@ h1 {
 
 /* Certificates css */
 
-.certificates {
-  margin: 0 auto;
-  padding: 80px;
-  margin-top: 100px;
-}
-
 .certificates-grid {
   max-width: 1200px;
   margin: 0 auto;
@@ -482,6 +473,7 @@ h1 {
   background: var(--background-color);
   color: var(--text-color);
   border-radius: 10px;
+  overflow: hidden;
   padding: 20px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
