@@ -7,6 +7,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="darkmode.css" rel="stylesheet" type="text/css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script defer src="script.js"></script>
   </head>
 
@@ -20,13 +21,13 @@
       <div class="profile-info">
         <h2>Nsovo Mboweni</h2>
         <p class="bio">
-          Software Development graduate based in Gauteng, South Africa.
-          Full-Stack Developer skilled in HTML, CSS, JavaScript, 
-          React, C#, .NET, and Kotlin.
-          Passionate about web app development.
-          Eager to learn, grow, and contribute to dynamic tech teams.
+          I have worked on various projects, honing my skills in both front-end
+          and back-end development. I have worked with technologies such as
+          JavaScript, React, C#, .NET, and Kotlin. Developed applications using 
+          APIs, databases, and cloud services such as MongoDB, Microsoft Azure, Delivery,
+          Payment and Live Location APIs. Currently pursuing an 
+          Advanced Diploma in Application Development.
         </p>
-        <a href="mailto:mnsovo2@gmail.com" class="contact-btn">Contact Me</a>
       </div>
     </div>
 
@@ -139,11 +140,10 @@
 
 
     <!-- Education-->
-
     <h1 class="education" id="education">Education</h1>
 
     <div class="education-grid">
-      <div class="education-card">
+      <div class="education-card" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
         <div class="education-content">
           <h2>Software Development Diploma</h2>
           <h4>Institution: Rosebank College</h4>
@@ -151,7 +151,7 @@
         </div>
       </div>
 
-      <div class="education-card">
+      <div class="education-card" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
         <div class="education-content">
           <h2>Advanced Diploma in Application Development</h2>
           <h4>Institution: Rosebank College</h4>
@@ -161,11 +161,10 @@
     </div>
 
     <!-- Certificates-->
-
     <h1 class="certificates" id="certificates">Certificates</h1>
 
     <div class="certificates-grid">
-      <div class="certificate-card">
+      <div class="certificate-card" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
         <div class="certificate-content">
           <h2>Diploma in Software Development</h2>
           <h4>Institution: Rosebank College</h4>
@@ -174,7 +173,7 @@
         </div>
       </div>
 
-      <div class="certificate-card">
+      <div class="certificate-card" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
         <div class="certificate-content">
           <h2>Full-Stack Development Certificate</h2>
           <h4>Institution: FNB</h4>
@@ -186,11 +185,10 @@
 
 
     <!-- projects.html -->
-
     <h1 class="projects" id="projects">Projects</h1>
 
     <div class="projects-grid">
-      <div class="project-card">
+      <div class="project-card" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
         <div class="project-content">
           <h2>E-commerce Website</h2>
           <p class="project-description">
@@ -214,7 +212,7 @@
           </div>
         </div>
       </div>
-      <div class="project-card">
+      <div class="project-card" data-aos="fade-left" data-aos-duration="8000" data-aos-delay="100">
         <div class="project-content">
           <h2>Portfolio Website</h2>
           <p class="project-description">
@@ -257,14 +255,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <!-- projects.html -->
-
     <div class="bottom-container">
       <a class="social-link" href="https://github.com/nsovo4" target="_blank">
         <img src="Social-Icons/github.png" alt="github" />
       </a>
-      <a class="social-link" href="https://x.com/NsvDevelops" target="_blank">
-        <img src="Social-Icons/twitter.svg" alt="twitter" />
+      <a class="social-link" href="mailto:mnsovo2@gmail.com" target="_blank">
+        <img src="Social-Icons/email.png" alt="twitter" />
       </a>
       <a
         class="social-link"
@@ -281,5 +277,15 @@
         <span class="dark-icon">🌙</span>
       </button>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: false,          
+        duration: 700,        
+        easing: 'ease-out-cubic'
+      });
+    </script>
+
   </body>
 </html>
