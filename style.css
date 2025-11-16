@@ -172,7 +172,7 @@ h1 {
 .profile-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   gap: 100px;
   margin: 10px auto;
   max-width: 1200px;
