@@ -103,6 +103,11 @@
     overflow-x: hidden;
     scroll-behavior: smooth;
   }
+  
+  .certificate-card {
+    align-items: center;
+    text-align: center;
+  }
 
   .bio {
     font-size: 12px;
@@ -134,12 +139,27 @@ h1 {
   font-size: 400%;
 }
 
+/* Section Styles 
 .projects,
 .education,
 .certificates {
+  text-align: center;
   margin: 0 auto;
   padding: 80px;
   margin-top: 100px;
+}
+  */
+
+.projects,
+.education,
+.certificates {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  margin-top: 100px;
+  gap: 60px;
 }
 
 .bottom-container {
