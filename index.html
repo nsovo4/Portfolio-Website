@@ -3,86 +3,106 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NsvDev</title>
+    <title>NsvDev — Nsovo Mboweni</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="darkmode.css" rel="stylesheet" type="text/css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script defer src="script.js"></script>
   </head>
 
   <body>
-    <h1>
-      <span class="typing-animation">Nsovo Develops</span>
-      <span class="typing-animation-mobile">Nsv Dev</span>
-    </h1>
-
-    <div class="profile-container" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
-      <div class="profile-info">
-        <h2>Nsovo Mboweni</h2>
-        <p class="bio">
-          I have worked on various projects, honing my skills in both front-end
-          and back-end development. I have worked with technologies such as
-          JavaScript, React, C#, .NET, and Kotlin. Developed applications using 
-          APIs, databases, and cloud services such as MongoDB, Microsoft Azure, Delivery,
-          Payment and Live Location APIs. Currently pursuing an 
-          Advanced Diploma in Application Development.
-        </p>
+    <header class="site-nav">
+      <div class="nav-inner">
+        <button
+          class="nav-menu-btn"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="mobileNavLinks"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="#top" class="nav-mark">Nsv<span>Dev</span></a>
+        <nav class="nav-links" id="mobileNavLinks">
+          <a href="#about">about</a>
+          <a href="#skills">skills</a>
+          <a href="#projects">projects</a>
+          <a href="#education">education</a>
+          <a href="#certificates">certificates</a>
+        </nav>
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">
+          <span class="light-icon">☀️</span>
+          <span class="dark-icon">🌙</span>
+        </button>
       </div>
-    </div>
+    </header>
 
-    <div class="skills-belt-container">
-      <div class="skills-belt">
-        <div class="skills">
-          <div class="skill-item">
-            <img src="Skills-Icons/java.svg" alt="Java" title="Java" />
-            <span>Java</span>
-          </div>
-          <div class="skill-item">
-            <img
-              src="Skills-Icons/javascript.svg"
-              alt="JavaScript"
-              title="JavaScript"
-            />
-            <span>JavaScript</span>
-          </div>
-          <div class="skill-item">
-            <img src="Skills-Icons/html.svg" alt="HTML" title="HTML" />
-            <span>HTML</span>
-          </div>
-          <div class="skill-item">
-            <img src="Skills-Icons/css.svg" alt="CSS" title="CSS" />
-            <span>CSS</span>
-          </div>
-          <div class="skill-item">
-            <img src="Skills-Icons/sql.svg" alt="SQL" title="SQL" />
-            <span>SQL</span>
-          </div>
-          <div class="skill-item">
-            <img src="Skills-Icons/csharp.svg" alt="C#" title="C#" />
-            <span>C#</span>
-          </div>
-          <div class="skill-item">
-            <img src="Skills-Icons/dotnet.svg" alt=".NET" title=".NET" />
-            <span>.NET</span>
-          </div>
-          <div class="skill-item">
-            <img src="Skills-Icons/react.svg" alt="React" title="React" />
-            <span>React</span>
-          </div>
-          <div class="skill-item">
-            <img
-              src="Skills-Icons/firebase.svg"
-              alt="Firebase"
-              title="Firebase"
-            />
-            <span>Firebase</span>
-          </div>
-          <div class="skill-item">
-            <img src="Skills-Icons/azure.svg" alt="Azure" title="Azure" />
-            <span>Azure</span>
+    <main id="top">
+      <!-- ============ HERO / ABOUT ============ -->
+      <section class="hero" id="about">
+        <div class="hero-inner">
+          <div class="terminal-card" data-aos="fade-up" data-aos-duration="700">
+            <div class="terminal-bar">
+              <span class="dot red"></span>
+              <span class="dot amber"></span>
+              <span class="dot green"></span>
+              <span class="terminal-title mono">nsovo@dev:~</span>
+            </div>
+            <div class="terminal-body">
+              <p class="mono prompt-line">
+                <span class="prompt">$</span>
+                <span class="typing-animation">Nsovo Develops</span>
+                <span class="typing-animation-mobile">Nsv Dev</span>
+              </p>
+            </div>
           </div>
 
+          <div
+            class="profile-container"
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-delay="100"
+          >
+            <div class="profile-info">
+              <span class="eyebrow mono">who am i</span>
+              <h2>Nsovo Mboweni</h2>
+              <p class="bio">
+                I have worked on various projects, honing my skills in both
+                front-end and back-end development. I have worked with
+                technologies such as JavaScript, React, C#, .NET, and Kotlin.
+                Developed applications using APIs, databases, and cloud
+                services such as MongoDB, Microsoft Azure, Delivery, Payment
+                and Live Location APIs. Recently completed my Advanced
+                Diploma in Application Development.
+              </p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#projects">View projects</a>
+                <a
+                  class="btn btn-ghost"
+                  href="Nsovo Mboweni - CV.pdf"
+                  download="CV - Nsovo Mboweni"
+                  >Download CV</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SKILLS BELT ============ -->
+      <section class="skills-belt-container" id="skills">
+        <div class="belt-label">
+          <span class="eyebrow mono">stack</span>
+        </div>
+        <div class="skills-belt">
           <div class="skills">
             <div class="skill-item">
               <img src="Skills-Icons/java.svg" alt="Java" title="Java" />
@@ -132,210 +152,340 @@
               <img src="Skills-Icons/azure.svg" alt="Azure" title="Azure" />
               <span>Azure</span>
             </div>
+          </div>
+          <!-- duplicate block (sibling, not nested) so the marquee loops seamlessly -->
+          <div class="skills">
+            <div class="skill-item">
+              <img src="Skills-Icons/java.svg" alt="Java" title="Java" />
+              <span>Java</span>
+            </div>
+            <div class="skill-item">
+              <img
+                src="Skills-Icons/javascript.svg"
+                alt="JavaScript"
+                title="JavaScript"
+              />
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <img src="Skills-Icons/html.svg" alt="HTML" title="HTML" />
+              <span>HTML</span>
+            </div>
+            <div class="skill-item">
+              <img src="Skills-Icons/css.svg" alt="CSS" title="CSS" />
+              <span>CSS</span>
+            </div>
+            <div class="skill-item">
+              <img src="Skills-Icons/sql.svg" alt="SQL" title="SQL" />
+              <span>SQL</span>
+            </div>
+            <div class="skill-item">
+              <img src="Skills-Icons/csharp.svg" alt="C#" title="C#" />
+              <span>C#</span>
+            </div>
+            <div class="skill-item">
+              <img src="Skills-Icons/dotnet.svg" alt=".NET" title=".NET" />
+              <span>.NET</span>
+            </div>
+            <div class="skill-item">
+              <img src="Skills-Icons/react.svg" alt="React" title="React" />
+              <span>React</span>
+            </div>
+            <div class="skill-item">
+              <img
+                src="Skills-Icons/firebase.svg"
+                alt="Firebase"
+                title="Firebase"
+              />
+              <span>Firebase</span>
+            </div>
+            <div class="skill-item">
+              <img src="Skills-Icons/azure.svg" alt="Azure" title="Azure" />
+              <span>Azure</span>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- projects.html -->
-    <h1 class="projects" id="projects">Projects</h1>
-
-    <div class="projects-grid">
-      <div class="project-card" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
-        <div class="project-content">
-          <h2>E-commerce Website 🔴</h2>
-          <p class="project-description">
-            An e-commerce website for a skincare brand specializing in natural
-            Wild Yam cream. Features include Payment Gateway integration and 
-            Delivery API integration for real-time shipping updates.
-          </p>
-          <div class="tech-stack">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Delivery API</span>
-            <span>Payment Gateway API</span>
+      <!-- ============ PROJECTS ============ -->
+      <section class="section-block" id="projects">
+        <div class="wrap">
+          <div class="sec-head" data-aos="fade-up">
+            <span class="eyebrow mono">002 / build log</span>
+            <h1 class="section-title">Projects</h1>
           </div>
-          <div class="project-links">
+
+          <div class="projects-grid">
+            <div
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-duration="700"
+            >
+              <div class="project-content">
+                <h2>E-commerce Website 🔴</h2>
+                <p class="project-description">
+                  An e-commerce website for a skincare brand specializing in
+                  natural Wild Yam cream. Features include Payment Gateway
+                  integration and Delivery API integration for real-time
+                  shipping updates.
+                </p>
+                <div class="tech-stack">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Delivery API</span>
+                  <span>Payment Gateway API</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://nsovo4.github.io/Burgundy-Supplies/"
+                    target="_blank"
+                    class="project-btn in-progress"
+                    >in progress..</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="80"
+            >
+              <div class="project-content">
+                <h2>Portfolio Website 🟢</h2>
+                <p class="project-description">
+                  A professional photography portfolio website showcasing
+                  the photographer's work across different categories
+                  including Film and Photography. Features a clean,
+                  minimalist design that puts the focus on the visual
+                  content.
+                </p>
+                <div class="tech-stack">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://nsovo4.github.io/Mvjor---Portfolio/"
+                    target="_blank"
+                    class="project-btn"
+                    >Check it out</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-duration="700"
+            >
+              <div class="project-content">
+                <h2>Bird Observation App 🔴</h2>
+                <p class="project-description">
+                  Developed a bird observation application using Kotlin,
+                  Java and APIs that has a world map with your current
+                  location and bird observation hotspots near you.
+                </p>
+                <div class="tech-stack">
+                  <span>Kotlin</span>
+                  <span>RESTful APIs</span>
+                  <span>Live Location Tracking</span>
+                </div>
+                <div class="project-links">
+                  <span class="project-btn in-progress">in progress..</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="project-card"
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="80"
+            >
+              <div class="project-content">
+                <h2>QR Code Generator 🟢</h2>
+                <p class="project-description">
+                  Built a responsive web application using HTML, CSS, and
+                  JavaScript that generates downloadable QR codes from text
+                  or URLs, featuring dark mode support and live deployment
+                  via GitHub Pages.
+                </p>
+                <div class="tech-stack">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://nsovo4.github.io/QR-GENERATOR/"
+                    target="_blank"
+                    class="project-btn"
+                    >Check it out</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EDUCATION ============ -->
+      <section class="section-block" id="education">
+        <div class="wrap">
+          <div class="sec-head" data-aos="fade-up">
+            <span class="eyebrow mono">003 / credentials</span>
+            <h1 class="section-title">Education</h1>
+          </div>
+
+          <div class="education-grid">
+            <div
+              class="education-card"
+              data-aos="fade-up"
+              data-aos-duration="700"
+            >
+              <div class="education-content">
+                <h2>Software Development Diploma</h2>
+                <h4>Institution: Rosebank College</h4>
+                <p class="duration">2022 – 2024</p>
+              </div>
+            </div>
+
+            <div
+              class="education-card"
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="80"
+            >
+              <div class="education-content">
+                <h2>Advanced Diploma in Application Development</h2>
+                <h4>Institution: Rosebank College</h4>
+                <p class="duration">2025 – 2026</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CERTIFICATES ============ -->
+      <section class="section-block" id="certificates">
+        <div class="wrap">
+          <div class="sec-head" data-aos="fade-up">
+            <span class="eyebrow mono">004 / certificates</span>
+            <h1 class="section-title">Certificates</h1>
+          </div>
+
+          <div class="certificates-grid">
+            <div
+              class="certificate-card"
+              data-aos="fade-up"
+              data-aos-duration="700"
+            >
+              <div class="certificate-content">
+                <h2>Diploma in Software Development</h2>
+                <h4>Institution: Rosebank College</h4>
+                <p class="duration">2024</p>
+                <a
+                  href="Nsovo Mboweni - diploma.pdf"
+                  target="_blank"
+                  class="view-btn-cert"
+                  >View Certificate</a
+                >
+              </div>
+            </div>
+
+            <div
+              class="certificate-card"
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="80"
+            >
+              <div class="certificate-content">
+                <h2>Full-Stack Development Certificate</h2>
+                <h4>Institution: FNB</h4>
+                <p class="duration">2025</p>
+                <a
+                  href="FNB Certificate.pdf"
+                  target="_blank"
+                  class="view-btn-cert"
+                  >View Certificate</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="section-block contact-block" id="contact">
+        <div class="wrap" data-aos="fade-up">
+          <span class="eyebrow mono">005 / contact</span>
+          <h2 class="contact-heading">
+            Have something worth building? I'd like to hear about it.
+          </h2>
+
+          <div class="action-buttons">
             <a
-              href="https://nsovo4.github.io/Burgundy-Supplies/"
-              target="_blank"
-              class="project-btn"
-              >in progress..</a
+              class="download-btn"
+              href="Nsovo Mboweni - CV.pdf"
+              download="CV - Nsovo Mboweni"
+              >Download CV</a
             >
           </div>
-        </div>
-      </div>
-      <div class="project-card" data-aos="fade-left" data-aos-duration="8000" data-aos-delay="100">
-        <div class="project-content">
-          <h2>Portfolio Website 🟢</h2>
-          <p class="project-description">
-            A professional photography portfolio website showcasing the
-            photographer's work across different categories including Film and
-            Photography. Features a clean, minimalist design that puts the focus
-            on the visual content.
-          </p>
-          <div class="tech-stack">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-          </div>
-          <div class="project-links">
+
+          <div class="bottom-container">
             <a
-              href="https://nsovo4.github.io/Mvjor---Portfolio/"
+              class="social-link"
+              href="https://github.com/nsovo4"
               target="_blank"
-              class="project-btn"
-              >Check it out</a
+              aria-label="GitHub"
             >
-          </div>
-        </div>
-      </div>
-    </div>
-    <br /><br /><br /><br />
-
-    <div class="projects-grid">
-      <div class="project-card" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
-        <div class="project-content">
-          <h2>Bird Observation App 🔴</h2>
-          <p class="project-description">
-            Developed a bird observation application using Kotlin, 
-            Java and API’s that has a world map with your current 
-            location and bird observation hotspots near you.
-          </p>
-          <div class="tech-stack">
-            <span>Kotlin</span>
-            <span>RESTful APIs</span>
-            <span>Live Location Tracking</span>
-          </div>
-          <a
-              target="_blank"
-              class="project-btn"
-              >in progress..</a
-            >
-        </div>
-      </div>
-      <div class="project-card" data-aos="fade-left" data-aos-duration="8000" data-aos-delay="100">
-        <div class="project-content">
-          <h2>QR Code Generator 🟢</h2>
-          <p class="project-description">
-            Built a responsive web application using HTML, CSS, and 
-            JavaScript that generates downloadable QR codes from text or URLs,
-            featuring dark mode support and live deployment via GitHub Pages.
-          </p>
-          <div class="tech-stack">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-          </div>
-          <div class="project-links">
+              <img src="Social-Icons/github.png" alt="" />
+            </a>
             <a
-              href="https://nsovo4.github.io/QR-GENERATOR/"
+              class="social-link"
+              href="mailto:mnsovo2@gmail.com"
               target="_blank"
-              class="project-btn"
-              >Check it out</a
+              aria-label="Email"
             >
+              <img src="Social-Icons/email.png" alt="" />
+            </a>
+            <a
+              class="social-link"
+              href="https://www.linkedin.com/in/nsovomboweni"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <img src="Social-Icons/linkedin.svg" alt="" />
+            </a>
           </div>
         </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap mono">
+        <span>© 2026 Nsovo Mboweni</span>
+        <span>built with care, not a template</span>
       </div>
-    </div>
-    <br /><br /><br />
-
-
-    <!-- Education-->
-    <h1 class="education" id="education">Education</h1>
-
-    <div class="education-grid">
-      <div class="education-card" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
-        <div class="education-content">
-          <h2>Software Development Diploma</h2>
-          <h4>Institution: Rosebank College</h4>
-          <p class="duration">2022 - 2024</p>
-        </div>
-      </div>
-
-      <div class="education-card" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
-        <div class="education-content">
-          <h2>Advanced Diploma in Application Development</h2>
-          <h4>Institution: Rosebank College</h4>
-          <p class="duration">2025 - 2026</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Certificates-->
-    <h1 class="certificates" id="certificates">Certificates</h1>
-
-    <div class="certificates-grid">
-      <div class="certificate-card" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
-        <div class="certificate-content">
-          <h2>Diploma in Software Development</h2>
-          <h4>Institution: Rosebank College</h4>
-          <p class="duration">2024</p>
-          <a href="Nsovo Mboweni - diploma.pdf" target="_blank" class="view-btn-cert">View Certificate</a>
-        </div>
-      </div>
-
-      <div class="certificate-card" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
-        <div class="certificate-content">
-          <h2>Full-Stack Development Certificate</h2>
-          <h4>Institution: FNB</h4>
-          <p class="duration">2025</p>
-          <a href="FNB Certificate.pdf" target="_blank" class="view-btn-cert">View Certificate</a>
-        </div>
-      </div>
-    </div>
-
-
-    
-
-    <div class="action-buttons">
-      <a
-        class="download-btn"
-        href="Nsovo Mboweni - CV.pdf"
-        download="CV - Nsovo Mboweni"
-        >Download CV
-      </a>
-    </div>
+    </footer>
 
     <script
       type="text/javascript"
       src="https://cdn.emailjs.com/dist/email.min.js"
     ></script>
-
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <div class="bottom-container">
-      <a class="social-link" href="https://github.com/nsovo4" target="_blank">
-        <img src="Social-Icons/github.png" alt="github" />
-      </a>
-      <a class="social-link" href="mailto:mnsovo2@gmail.com" target="_blank">
-        <img src="Social-Icons/email.png" alt="twitter" />
-      </a>
-      <a
-        class="social-link"
-        href="https://www.linkedin.com/in/nsovomboweni"
-        target="_blank"
-      >
-        <img src="Social-Icons/linkedin.svg" alt="linkedin" />
-      </a>
-    </div>
-
-    <div class="theme-toggle">
-      <button id="themeToggle" class="theme-btn">
-        <span class="light-icon">☀️</span>
-        <span class="dark-icon">🌙</span>
-      </button>
-    </div>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
-        once: false,          
-        duration: 700,        
-        easing: 'ease-out-cubic'
+        once: false,
+        duration: 700,
+        easing: "ease-out-cubic",
       });
     </script>
-
   </body>
 </html>
