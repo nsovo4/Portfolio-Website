@@ -49,7 +49,6 @@ prefersDarkScheme.addEventListener('change', (e) => {
   localStorage.setItem('theme', newTheme);
 });
 
-// Highlight the current section's nav link while scrolling
 document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('.nav-links a');
   const sections = Array.from(navLinks)

@@ -1,14 +1,9 @@
-/* ==========================================================================
-   NsvDev — design tokens
-   ========================================================================== */
 :root {
-  /* brand navy, kept from the original + a warm accent to pair with it */
   --navy: #1E2B64;
   --navy-deep: #12183F;
   --amber: #E8A33D;
   --amber-soft: rgba(232, 163, 61, 0.16);
 
-  /* light theme */
   --paper: #F6F4EE;
   --surface-light: #FFFFFF;
   --ink-light: #14162B;
@@ -16,7 +11,6 @@
   --border-light: #E6E2D4;
   --shadow-light: 0 10px 30px rgba(20, 22, 43, 0.08);
 
-  /* dark theme */
   --bg-dark: #0E1128;
   --surface-dark: #171B3C;
   --ink-dark: #EDEDF5;
@@ -46,9 +40,7 @@
   --shadow: var(--shadow-dark);
 }
 
-/* ==========================================================================
-   Reset & base
-   ========================================================================== */
+
 * { box-sizing: border-box; }
 
 html, body {
@@ -104,9 +96,7 @@ h1, h2, h3 {
   margin: 0;
 }
 
-/* ==========================================================================
-   Nav
-   ========================================================================== */
+
 .site-nav {
   position: sticky;
   top: 0;
@@ -203,9 +193,7 @@ h1, h2, h3 {
 [data-theme="light"] .dark-icon { display: none; }
 [data-theme="dark"] .light-icon { display: none; }
 
-/* ==========================================================================
-   Hero / terminal
-   ========================================================================== */
+
 .hero { padding: 72px 0 90px; }
 
 .hero-inner {
@@ -320,9 +308,7 @@ h1, h2, h3 {
 .btn-ghost { border-color: var(--border); color: var(--ink); background: transparent; }
 .btn-ghost:hover { border-color: var(--amber); color: var(--amber); }
 
-/* ==========================================================================
-   Skills belt
-   ========================================================================== */
+
 .skills-belt-container {
   position: relative;
   overflow: hidden;
@@ -388,18 +374,14 @@ h1, h2, h3 {
 .skills-belt-container::before { left: 0; background: linear-gradient(90deg, var(--navy-deep) 0%, transparent 100%); }
 .skills-belt-container::after { right: 0; background: linear-gradient(90deg, transparent 0%, var(--navy-deep) 100%); }
 
-/* ==========================================================================
-   Section shell
-   ========================================================================== */
+
 .section-block { padding: 88px 0; border-top: 1px solid var(--border); }
 
 .sec-head { margin-bottom: 44px; }
 
 .section-title { font-size: clamp(1.8rem, 4vw, 2.4rem); }
 
-/* ==========================================================================
-   Cards — shared
-   ========================================================================== */
+
 .projects-grid,
 .education-grid,
 .certificates-grid {
@@ -427,7 +409,6 @@ h1, h2, h3 {
   border-color: var(--amber);
 }
 
-/* ---- Projects ---- */
 .project-content h2 {
   color: var(--ink);
   margin: 0 0 12px 0;
@@ -481,7 +462,6 @@ h1, h2, h3 {
 }
 .project-btn.in-progress:hover { background: transparent; transform: none; border-color: var(--amber); color: var(--amber); }
 
-/* ---- Education / Certificates ---- */
 .education-content h2,
 .certificate-content h2 {
   font-size: 1.15rem;
@@ -519,9 +499,7 @@ h1, h2, h3 {
 .view-btn-cert:hover { background: var(--navy-deep); transform: translateY(-2px); }
 [data-theme="dark"] .view-btn-cert { background: var(--amber); color: var(--navy-deep); }
 
-/* ==========================================================================
-   Contact
-   ========================================================================== */
+
 .contact-block { text-align: left; }
 
 .contact-heading {
@@ -572,9 +550,7 @@ h1, h2, h3 {
 .social-link:hover { transform: translateY(-3px); border-color: var(--amber); }
 .social-link img { height: 20px; width: 20px; object-fit: contain; }
 
-/* ==========================================================================
-   Footer
-   ========================================================================== */
+
 .site-footer {
   border-top: 1px solid var(--border);
   padding: 28px 0 40px;
@@ -588,9 +564,7 @@ h1, h2, h3 {
   color: var(--ink-soft);
 }
 
-/* ==========================================================================
-   Responsive
-   ========================================================================== */
+
 @media (max-width: 768px) {
   .nav-inner { padding: 14px 20px; }
   .hero-inner { padding: 0 20px; }
