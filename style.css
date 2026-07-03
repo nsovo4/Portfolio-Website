@@ -402,6 +402,34 @@ h1, h2, h3 {
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 170px;
+  margin-bottom: 20px;
+  border: 1px dashed var(--border);
+  border-radius: calc(var(--radius) - 2px);
+  background: linear-gradient(135deg, var(--amber-soft), rgba(255,255,255,0.22));
+  color: var(--ink-soft);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 16px;
+}
+
+.project-card:hover .project-media {
+  border-color: var(--amber);
+  color: var(--amber);
+}
+
 .project-card:hover,
 .education-card:hover,
 .certificate-card:hover {
