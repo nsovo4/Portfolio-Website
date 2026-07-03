@@ -73,4 +73,60 @@ document.addEventListener('DOMContentLoaded', () => {
   );
 
   sections.forEach((section) => observer.observe(section));
+
+  const slideshows = [
+    {
+      id: 'gigpass',
+      images: ['images/gigpass%201.png', 'images/gigpass%202.png', 'images/gigpass%203.png'],
+    },
+    {
+      id: 'burgundy',
+      images: ['images/Burgundy%201.png', 'images/Burgundy%202.png', 'images/Burgundy%203.png', 'images/Burgundy%204.png'],
+    },
+  ];
+
+  slideshows.forEach(({ id, images }) => {
+    const slideshow = document.querySelector(`.slideshow[data-slideshow-id="${id}"]`);
+    if (!slideshow) return;
+
+    const imgElement = slideshow.querySelector('img');
+
+    let currentIndex = 0;
+    let fadeTimer = null;
+    const fadeDuration = 600;
+
+    const updateSlide = () => {
+      if (fadeTimer) {
+        window.clearTimeout(fadeTimer);
+      }
+      imgElement.style.opacity = '0';
+      fadeTimer = window.setTimeout(() => {
+        imgElement.src = images[currentIndex];
+        imgElement.style.opacity = '1';
+      }, fadeDuration);
+    };
+
+    const autoplayDelay = 4000;
+    let autoplayTimer = null;
+
+    const startAutoplay = () => {
+      autoplayTimer = window.setInterval(() => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateSlide();
+      }, autoplayDelay);
+    };
+
+    const stopAutoplay = () => {
+      if (autoplayTimer) {
+        window.clearInterval(autoplayTimer);
+        autoplayTimer = null;
+      }
+    };
+
+    slideshow.addEventListener('mouseenter', stopAutoplay);
+    slideshow.addEventListener('mouseleave', startAutoplay);
+
+    updateSlide();
+    startAutoplay();
+  });
 });
